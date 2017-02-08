@@ -1,0 +1,13 @@
+ <?php
+public class main {
+     
+    public static void main(String[]args) {
+          Mahasiswa a = new Mahasiswa();
+          a. setJurusan("Teknologi Informasi");
+          a. setProdi("Manajemen Informatika");
+          a. setNIM("1401092001");
+          a. setNama("Fidiatus Sakinah");
+     System.out.println(Jurusan : "+a.getJurusan()+"\n Prodi : "+a.getProdi()+"\n NIM : "+a.getNIM()+"\n Nama : "+a.getNama());
+    }
+}
+     

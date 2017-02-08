@@ -1,0 +1,42 @@
+
+Implementasi PSR dalam OOP => Polimorphism
+
+<?php
+public class Buah {
+   public String respons(){
+	return("Nama-nama Buah ");
+   }
+}
+class Jambu extends NamaBuah {
+   public String respones() {
+	return("Jambu Air");
+   }
+}
+class Salak extends NamaBuah {
+   public String respones() {
+	return("Salak Pondo");
+   }
+}
+class Mangga extends NamaBuah {
+   public String respones() {
+	return("Mangga Apel");
+   }
+}
+class MainBuah {
+    public statis void main(String[]args) {
+	NamaBuah objBuah = new NamaBuah();
+	jambu objJambu = new Jambu();
+	Salak objSalak = new Salak();
+	Mangga objMangga = new Mangga();
+    	NamaBuah[]arrNama = new NamaBuah[3];
+	arrNama[0] = objNamaBuah;
+	arrNama[1] = objJambu;
+	arrNama[2] = objSalak;
+	arrNama[3] = objMangga;
+
+	System.out.println"Nama-nama Buah : "arrNama[0].respons());
+	System.out.println"Jambu : "arrNama[1].respons());	
+	System.out.println"Salak : "arrNama[2].respons());
+	System.out.println"Mangga : "arrNama[3].respons());
+     }
+}

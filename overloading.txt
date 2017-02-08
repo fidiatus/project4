@@ -1,0 +1,25 @@
+
+Implementasi PSR dalam OOP => Overloading
+overloading yaitu menuliskan kembali method dengan nama yang sama pada suatu class,
+dengan tujuan memudahkan penggunaan/pemanggilann method dengan fungsi yang mirip.
+syarat terjadinya overloading yaitu nama method harus sama,daftar parameter berbeda, return type boleh sama ataupun berbeda.
+Contoh:
+<?php
+public class TeknologiInformasi{
+        private String namaDosen;
+        private double gajiDosen;
+        private static final double BASE_GAJI=4000000;
+        private Date tglLahir;
+    
+        public TeknologiInformasi(String nama,double gaji, Date DoB) 
+                  this.namaDosen = nama;
+	this.gajiDosen = gaji;
+	this.tglLahir = DoB;
+        }
+        public TeknologiInformasi(String nama,double gaji) 
+                  this(nama,gaji,null);
+        }
+        public TeknologiInformasi(String nama,Date DoB) 
+                  this(nama,BASE_GAJI,DoB);
+        }
+?>

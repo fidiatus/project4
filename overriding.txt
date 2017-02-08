@@ -1,0 +1,29 @@
+
+Implementasi PSR dalam OOP => Overriding
+overriding subclass yang berusaha memodifikasi sifat yang diwarisi dari superclass dengan tujuan suclass memiliki sifat yang lebih spesifik dengan cara mendeklarasikan method parent class di subclass.
+deklarasi method ini harus sama dengan yang ada pada subclass baik itu nama,return type, dan daftar parameter(jumlah,tipe,dan urutan).
+method pada parent class disebut overriden method dan method pada subclass disebut overriding method.
+<?php
+public class Perusahaan {
+   protected int nip;
+   protected String nama;
+   protected double gaji;
+ 
+   public String getDetails() {
+	return "Nip : "+nip+ "\n"+
+	           "Nama : "+nama+ "\n"+
+	           "Gaji : "+gaji;
+   }
+}
+
+public class Manajer extend Perusahaan {
+   protected String bagian;
+
+    public String getDetails() {
+	return "Nip : "+nip+"\n"+
+	            "Nama : "+nama+"\n"+
+                              "gaji : "+gaji+"\n"+
+	            "Bagian : "+bagian;
+    }
+}
+?>

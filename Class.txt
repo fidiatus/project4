@@ -1,0 +1,11 @@
+<?php
+class Laptop 
+{
+    function hidupkan_laptop() {
+     //method hidupkan_laptop
+  }
+    function mtikan_laptop() {
+     //method matikan_laptop
+  }
+    //isi class
+}
